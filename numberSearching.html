@@ -8,29 +8,37 @@
 <script>
     function numberSearching(a) {
         let indexM = 0;
-        let repeat = randomNum[0];
         for (let i =0; i<randomNum.length;i++){
             if (a === randomNum[i]){
-                repeat = i;
+                luuTru = [i];
                 indexM = i;
-
                 break;
             }  else if (a!= randomNum[i]) {
             indexM = false;
             }
-
         }
-        return repeat;
         return indexM;
+    };
+    function repeatThing(){
+        let luuTru = [];
+        for (let i =0; i<randomNum.length;i++){
+            if (a === randomNum[i]){
+                luuTru.push(i);
+                break;
+            }
+        }
+        return luuTru.length;
     };
     // cach
     let randomNum = [];
+    let luuTru = [];
     for (let i =0; i<20; i++){
        randomNum[i] = Math.floor(Math.random()*20);
     }
     let a = Number(prompt("Nhap so: ",""));
-    document.write("So phan tu cua mang la: "+randomNum+"<br>");
-    document.write("So lan lap cua phan tu da nhap la: "+a+" Tìm thấy ở vị trí số:"+ numberSearching(a));
+    document.write("Số phần tử của mảng là: : "+randomNum+"<br>");
+    document.write("Số phần tử đã nhập là : "+a+" Tìm thấy ở vị trí số :"+ numberSearching(a)+"<br>");
+    document.write("Số lần lặp của phần tử "+ a+" là : "+repeatThing(a));
 </script>
 </body>
 </html>
