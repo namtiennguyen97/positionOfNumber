@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RepeatNumber</title>
+</head>
+<body>
+<script>
+    function numberSearching(a) {
+        let indexM = 0;
+        let repeat = randomNum[0];
+        for (let i =0; i<randomNum.length;i++){
+            if (a === randomNum[i]){
+                repeat = i;
+                indexM = i;
+
+                break;
+            }  else if (a!= randomNum[i]) {
+            indexM = false;
+            }
+
+        }
+        return repeat;
+        return indexM;
+    };
+    // cach
+    let randomNum = [];
+    for (let i =0; i<20; i++){
+       randomNum[i] = Math.floor(Math.random()*20);
+    }
+    let a = Number(prompt("Nhap so: ",""));
+    document.write("So phan tu cua mang la: "+randomNum+"<br>");
+    document.write("So lan lap cua phan tu da nhap la: "+a+" Tìm thấy ở vị trí số:"+ numberSearching(a));
+</script>
+</body>
+</html>
