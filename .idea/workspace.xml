@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb44faa2-eff6-431b-bfdc-8859702ce4d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/numberSearching.html" beforeDir="false" afterPath="$PROJECT_DIR$/numberSearching.html" afterDir="false" />
     </list>
@@ -28,6 +27,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,7 +51,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566527965178</updated>
-      <workItem from="1566527968596" duration="3553000" />
+      <workItem from="1566527968596" duration="9246000" />
+      <workItem from="1567046606452" duration="283000" />
     </task>
     <servers />
   </component>
@@ -63,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

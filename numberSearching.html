@@ -19,16 +19,6 @@
         }
         return indexM;
     };
-    function repeatThing(){
-        let luuTru = [];
-        for (let i =0; i<randomNum.length;i++){
-            if (a === randomNum[i]){
-                luuTru.push(i);
-                break;
-            }
-        }
-        return luuTru.length;
-    };
     // cach
     let randomNum = [];
     let luuTru = [];
@@ -36,9 +26,14 @@
        randomNum[i] = Math.floor(Math.random()*20);
     }
     let a = Number(prompt("Nhap so: ",""));
+    for (let i =0; i<randomNum.length; i++){
+        if (a === randomNum[i]){
+            luuTru.push(i);
+        }
+    }
     document.write("Số phần tử của mảng là: : "+randomNum+"<br>");
     document.write("Số phần tử đã nhập là : "+a+" Tìm thấy ở vị trí số :"+ numberSearching(a)+"<br>");
-    document.write("Số lần lặp của phần tử "+ a+" là : "+repeatThing(a));
+    document.write("Số lần lặp của phần tử "+ a+" là : "+luuTru.length);
 </script>
 </body>
 </html>
